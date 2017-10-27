@@ -10,11 +10,11 @@ for i in range(0,len(sheet_names)):
     file_object.write(sheet_names[i])
     file_object.write("\n")
     for row in sheet.rows:
-        i_am_gay = True
+        first = True
         for cell in row:
-            if i_am_gay==True:
+            if first==True:
                 h = cell.value
-                i_am_gay=False
+                first=False
             else:
                 G = cell.value
                 if G == None:
