@@ -8,5 +8,8 @@ for item,i in zip(img,range(0,14)):
     item =255-item
     img[i]=item
 cv2.imwrite("modified.png",img)
-plt.imshow(img)
-plt.show()
+cv2.imshow("image",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#plt.show()
