@@ -4,7 +4,7 @@ wb = load_workbook("Online Document Database.xlsx")
 sheet_names=wb.get_sheet_names() # list of sheet names # list of strings
 
 file_object =open("ref_list.txt","w")
-i_am_gay = True
+first = True
 for i in range(0,len(sheet_names)):
     sheet=wb[sheet_names[i]]
     file_object.write(sheet_names[i])
